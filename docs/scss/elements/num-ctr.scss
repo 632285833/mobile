@@ -1,0 +1,6 @@
+.num-ctr { width: 85px; height: 24px; border: 1px solid #e0e0e0; display: flex; border-radius: 4px; font-weight: bold; cursor:pointer; background: #fff; -webkit-user-select: none; 
+	input { width: 34px; border: none; text-align: center; }
+	.minus-btn { width: 24px; border-right: 1px solid #e0e0e0; text-align: center; line-height: 22px; &:active { color: $orange; }}
+	.add-btn { width: 24px; @include border-left(#e0e0e0); text-align: center; line-height: 22px;&:active { color: $orange; } }
+
+}
