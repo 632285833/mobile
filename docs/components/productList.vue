@@ -1,12 +1,15 @@
 <template>
 	<div class="product-list-page">
 	    <modal 
-	    @close="closeModal('dataModalVis')" 
-	    :vis="boolList['dataModalVis']" 
+	    @onCancle="closeModal('dataModalVis')" 
+	    :vis="boolList['dataModalVis']"
+	    :cancelVis="true"
+	    type="alertAction"
 	    >
+	    <div class="font-md">订单：NG023449394已被取消，请及时确认！</div>
 	    </modal>
 	     <modal 
-	    @close="closeModal('sortModalVis')" 
+	    @onCancle="closeModal('sortModalVis')" 
 	    :vis="boolList['sortModalVis']" 
 	    ref="sortModal">
 	        <div slot="header" class="font-xxl font-bold">排序方式</div>       
@@ -19,7 +22,7 @@
 	    	</ul>
 	    </modal>
 	     <modal 
-	    @close="closeModal('filterModalVis')" 
+	    @onCancle="closeModal('filterModalVis')" 
 	    :vis="boolList['filterModalVis']" 
 	    class="has-footer"
 	    >

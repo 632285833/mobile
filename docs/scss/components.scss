@@ -89,6 +89,38 @@
 	bottom: 0;
 	overflow: auto;
 	z-index: $zindex-modal-backdrop;
+	&.alert-action {
+		padding: 0.4rem;
+		display: flex; 
+		align-items: center;
+		.modal { 
+			width: 100%;
+			height: auto;
+			position: relative;
+			border-radius: 0.05rem;
+			.modal-body {
+				min-height: 2rem;
+				&.pure-txt {
+					padding: 0.4rem;
+				}
+			}
+			.cancel-confirm-container {
+				@include border-top();
+			    @extend .font-lg;
+			    display: flex;
+			    justify-content: center;
+				>* { 
+					text-align: center; 
+					padding: 0.25rem;
+					&:nth-child(2) { width: 50%; }
+					&:nth-child(1) { flex-grow: 1; }
+					&.cancel-button { @include border-right(); } 
+					&.confirm-button { color: $success; font-weight: bold; }
+				}
+				
+			}
+		};
+	}
 	.modal {
 		width: 100%;
 		position: absolute;
@@ -98,6 +130,7 @@
 		height: 80%;
 		bottom: 0;
 		-webkit-overflow-scrolling: touch;
+		
 		.modal-header { 
 			padding: 0.3rem;
 			display: flex;

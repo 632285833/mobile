@@ -19,11 +19,10 @@ $transparent: rgba(#000, 0);
 $warning:    $orange;
 $primary:    $olive;
 $secondary:  $pink;
-$success:    #28A752;
+$success:    #68AE00;
 $info:       #16A2B8;
 $danger:     #DC3445;
 $secondary:  $gray;
-
 
 .color-dark       { color: $dark; };
 .color-darkgray   { color: $darkgray; };
@@ -33,7 +32,7 @@ $secondary:  $gray;
 .color-warning    { color: $warning; };
 .color-gray       { color: $gray; }
 .color-secondary { color: $secondary; }
-.color-success    { color: $limegreen; }
+.color-success    { color: $success; }
 .color-danger     { color: $red; }
 .color-info       { color: $forestgreen; }
 
@@ -43,7 +42,7 @@ $secondary:  $gray;
 .bg-secondary    { background-color: $secondary; }
 
 
-$font-base: 0.32rem;
+$font-base: 0.34rem;
 .font-sm  { font-size: $font-base*0.88; }
 .font-md { font-size: $font-base; }
 .font-lg  { font-size: $font-base*1.16; }
